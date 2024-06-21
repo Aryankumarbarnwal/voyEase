@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Verdana, sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    
+    /* margin-right: 120px; */
+    background-color: white;
+    border-radius: 15px;
+    border-bottom: 0.002px solid #717137;
+}
+
+nav {
+    margin: 20px;
+    width: 90vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: .2;
+}
+
+nav .container ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav .container ul li {
+    margin-right: 20px;
+    font-size: 20px;
+    font: bold;
+}
+
+nav .container ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+.logo img {
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 250px;
+}
+
+button a {
+    align-items: center;
+    margin: 30px;
+}
+
+nav .container button {
+    height: 30px;
+    border-radius: 13px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+
+nav .container button:hover {
+    background-color: coral;
+    /* cursor: pointer; */
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.slider .images {
+    width: 100%;
+    height: 300px;
+    display: none;
+    position: relative;
+}
+
+.slider .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .images .text {
+    /* font-size: 25px; */
+    padding: 8px 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.slider .images .text button {
+    background-color: #eee4;
+    border: none;
+    color: #eee;
+    padding: 10px 20px ;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider .dash {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider .dash .dot {
+    cursor: pointer;
+    height: 5px;
+    width: 45px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+.slider .dash .dot:hover{
+    background-color: #717171;
+}
+
+.slider .dash .dot.active {
+    background-color: rgb(37, 26, 5); /* Active color */
+}
+
+#Home{
+    width: 100%;
+    max-width: 1000px;
+    height: 250px;
+    margin: 50px auto;
+    background: url(marble_bg.png);
+    background-size: cover;
+    text-align: center;
+    border-radius: 30px;
+    padding: 50px;
+}
+.text h1{
+    margin-bottom: 20px;
+    color: #eee;
+}
+.text h1 span{
+    color: darkorange;
+}
+.text p{
+    margin-bottom: 30px;
+    color: #eee;
+    /* top: 130px; */
+}
+.text button{
+    background-color: darkgoldenrod;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18pxpx;
+    border-radius: 20px;
+}
+
+
+#About-Us h1{
+    color: white;
+    width: 100%;
+    /* max-width: 1000px; */
+    height: 50px;
+    margin: 50px auto;
+    background: url(marble_bg.png);
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+}
+
+#About-Us .info-section{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+
+}
+#About-Us .info-section .headings{
+    /* border: 2px solid; */
+    text-align: center;
+    margin: 10px;
+    background-color: hotpink;
+    width: 330px;
+    height: 200px;
+    border-radius: 5px;
+    border: 0.02px solid;
+}
+#About-Us .info-section .headings h2{
+    background-color: deeppink;
+    text-align: center;
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 30px;
+    height: 40px;
+    border-bottom: 0.002px solid #717137;
+}
+
+#About-Us .next-info{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+
+}
+#About-Us .next-info .headings{
+    /* border: 2px solid; */
+    text-align: center;
+    margin-left: 130px;
+    margin-right: 130px;
+    background-color: hotpink;
+    width: 330px;
+    height: 200px;
+    border-radius: 5px;
+    border: 0.02px solid;
+    transition: 0.2s ease-in-out;
+}
+#About-Us .next-info .headings h2{
+    background-color: deeppink;
+    text-align: center;
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 30px;
+    height: 40px;
+    border-bottom: 0.002px solid #717137;
+}
+#About-Us .info-section .headings:hover{
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+    opacity: inherit;
+}
+#About-Us .next-info .headings:hover{
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+    opacity: inherit;
+}
+
+
+
+#Contact-Us{
+    align-items: center;
+
+}
+#Contact-Us h1{
+    background: url(marble_bg.png);
+    text-align: center;
+    color: white;
+    position: relative;
+    height: 100px;
+    margin: none;
+}
+#Contact-Us form{
+    width: 650px;
+    height: 500px;
+    border-radius: 13px;
+    border: 0.3px solid #717171;
+    /* background-color: #717171; */
+    text-decoration: none;
+    /* text-align: center; */
+    justify-content: space-between;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+#Contact-Us form ul h4{
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+    width: 12px;
+}
+#Contact-Us form li{
+    list-style: none;
+    top: 5px;
+    width: 450px;
+    border-radius: 13px;
+    background-color: white;
+}
+#Contact-Us form li input{
+    width: 450px;
+    height: 30px;
+    border: 0.5px solid #717137;
+    border-radius: 13px;
+}
+#Contact-Us form .message li input{
+    height: 150px;
+    text-decoration: none;
+}
+#Contact-Us form .message li ::placeholder{
+    top: 0;
+}
+#Contact-Us form button{
+    margin-left: 40px;
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 13px;
+    background-color: darksalmon;
+    color: white;
+    cursor: pointer;
+}
+
+#Contact-Us form button:hover
+{
+    background-color: palevioletred;
+}
+
+
+
+
